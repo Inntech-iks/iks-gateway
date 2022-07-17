@@ -1,0 +1,24 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+#  config:
+#    import:
+#    - optional:configserver:http://localhost:8762
+#  main:
+#    web-application-type: reactive
+#    allow-bean-definition-overriding: true
+    
+jwt:
+  secret: BvPHGM8C0ia4uOuxxqPD5DTbWC9F9TWvPStp3pb7ARo0oK2mJ3pd3YG4lxA9i8bj6OTbadwezxgeEByY
+
+#auth-service:
+#  path: /auth
